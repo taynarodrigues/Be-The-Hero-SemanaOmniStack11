@@ -2,12 +2,12 @@ const express = require('express');
 
 const app = express();
 
-app.get('/users/:id', (request, response) => {
-	const params = request.params;
+app.use(express.json());
 
-	console.log(params);
+app.post('/users', (request, response) => {
+	const body = request.body;
 
-	//criando a primeira rota
+	console.log(body);
 
 	return response.json({
 		evento: 'Semana OmniStack 11.0',
