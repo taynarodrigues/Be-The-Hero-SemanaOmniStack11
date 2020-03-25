@@ -11,7 +11,7 @@ app.post('/users', (request, response) => {
 
 	return response.json({
 		evento: 'Semana OmniStack 11.0',
-		aluna: 'Tayná'
+		aluna: 'Tayná R Nascimento'
 	});
 });
 
