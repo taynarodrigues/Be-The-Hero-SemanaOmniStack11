@@ -1,13 +1,16 @@
 const express = require('express');
 
 const OngController = require('./controllers/OngController');
+const IncidentController = require('./controllers/IncidentController');
+
 
 const routes = express.Router();
 
-// criando uma rota com a listagem das ongs
 routes.get('/ongs', OngController.index);
-
-// função assíncrona async
 routes.post('/ongs', OngController.create);
+
+routes.get('/incidents', IncidentController.index);
+routes.post('/incidents', IncidentController.create);
+routes.delete('/incidents/:id',IncidentController.delete);
 
 module.exports = routes;
