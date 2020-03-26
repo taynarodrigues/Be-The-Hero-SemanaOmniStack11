@@ -1,25 +1,27 @@
 const connection = require('../database/connection');
 
 module.exports = {
+	async index(request, response) { // método index para fazer a listagem 
+			const { page = 1 } = request.query; 	//Buscar de dentro do request.query um parâmtro "page"
 
-	// método index para fazer a listagem 
-	async index(request, response) {
-	//Trazendo todos os dados do incidents
-	const incidents = await connection('incidents').select('*');
-	return response.json(incidents);
-	},
+			const incidents = await connection('incidents') //Trazendo todos os dados do incidents
+			.limit(5) // limitar a busca para 5 registro
+			.offset((page - 1) * 5) //Na página preciso pular zero.Pular 5 registros por página (0 * 5)
+			.select('*');
+			return response.json(incidents);
+			},
 
-	async create(request, response){
-		const { title, description, value } = request.body;
-		const ong_id = request.headers.authorization;
+			async create(request, response){
+				const { title, description, value } = request.body;
+				const ong_id = request.headers.authorization;
 
-		//buscando com um único id
-	const [id] =	await connection('incidents').insert({
-			title,
-			description,
-			value,
-			ong_id,
-		});
+				//buscando com um único id
+			const [id] =	await connection('incidents').insert({
+					title,
+					description,
+					value,
+					ong_id,
+				});
 
 		return response.json({ id });
 	},
