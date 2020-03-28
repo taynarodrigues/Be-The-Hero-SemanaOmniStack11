@@ -1,8 +1,17 @@
 import React from 'react';
 
+import Header from './Header';
+
 function App() {
-  return (
-		<h1>Hello Omnistack</h1>
+  return(
+    // customizando utilizando a propriedade title 
+    // <Header title = "Semana OmniStack" />  
+    
+
+    //retorna todo o conteúdo do texto 'Semana OmniStack' através da propriedade children de forma automática,
+    <Header>
+      Semana OmniStack
+    </Header>
   );
 }
 
