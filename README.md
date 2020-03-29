@@ -60,7 +60,7 @@ Assim que o processo terminar, automaticamente será aberta no seu navegador a p
 
 
 ### Insomnia 
-Para testar a API do Be The Hero, baixe e instale o [Insomnia](https://insomnia.rest/download/) e em seguida clique na Workspace → `Import/Export` → `Import Data` → `From File` → e selecione o arquivo ` 	Insomnia_export.json` deste repositório.
+Para testar a API do Be The Hero, baixe e instale o [Insomnia](https://insomnia.rest/download/). 
 
 ## Licença
 
