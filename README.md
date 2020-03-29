@@ -8,6 +8,8 @@
   </a>
 </p>
 
+## :computer: Ferramentas Utilizadas
+
 ## Features
 Para o desenvolvimento do projeto foi utilizada uma stack com as seguintes tecnologias:
 
@@ -16,6 +18,29 @@ Para o desenvolvimento do projeto foi utilizada uma stack com as seguintes tecno
 - 💅 **Styled Components** — Tecnologia para componentizar estilização CSS no React através do Javascript
 - ⚛️ **React Js** — Livraria Javascript para construção de interfaces;
 - ⚛️ **React Native** — Livraria que provê uma maneira eficiente de criar aplicações nativas para Android e iOS;
+
+## 🚀  Tecnologias
+Backend:
+-   [Node.js](https://nodejs.org/en/)
+-	[Sqlite](https://www.sqlite.org/docs.html)
+-   [Express](https://expressjs.com/pt-br/)
+-   [Knex](http://knexjs.org/)
+-   [Nodemon](https://nodemon.io/)
+-   [Jest](https://jestjs.io/)
+
+Frontend:
+-   [ReactJS](https://pt-br.reactjs.org/)
+-   [Axios](https://github.com/axios/axios)
+-   [React icons](https://react-icons.netlify.com/#/)
+-   [React toastify](https://github.com/fkhadra/react-toastify)
+-   [React router dom](https://www.npmjs.com/package/react-router-dom)
+
+Mobile:
+-   [React Native](https://reactnative.dev/)
+-   [Expo](https://expo.io/)
+-   [MailComposer](https://docs.expo.io/versions/latest/sdk/mail-composer/)
+-   [React Navigation](https://reactnavigation.org/)
+-   [Axios](https://github.com/axios/axios)
 
 ## Projeto
 
@@ -33,6 +58,7 @@ cd backend
 npm install
 npm start
 ```
+## :books: Instalação
 
 ### Instalação - Frontend (WEB)
 Para iniciar o **Frontend** do React utilize os comandos:
@@ -62,6 +88,10 @@ Assim que o processo terminar, automaticamente será aberta no seu navegador a p
 ### Insomnia 
 Para testar a API do Be The Hero, baixe e instale o [Insomnia](https://insomnia.rest/download/). 
 
-## Licença
+## 📝 Licença
 
 Esse projeto é licensiado pela MIT License - Veja a página da [licença](https://opensource.org/licenses/MIT) para detalhes
+
+----------
+
+Feito com ♥ by Tayna Rodrigues  👋 
