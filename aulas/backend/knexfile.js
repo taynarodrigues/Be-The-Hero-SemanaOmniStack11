@@ -10,9 +10,11 @@ module.exports = {
     migrations: {
       directory: './src/database/migrations'
     },
-    //Por padrão sqlite  não suportar valor para as colunas de banco de dados,
-    //então usa-se 'useNullAsDefault' para que o valor seja nulo, ou seja, valor vazio. Does not support inserting default values. Set the `useNullAsDefault` flag to hide this warning. (see docs http://knexjs.org/#Builder-insert).
-    useNullAsDefault: true,
+    useNullAsDefault: true,     
+    /*Por padrão sqlite  não suportar valor para as colunas de banco de dados,
+    então usa-se 'useNullAsDefault' para que o valor seja nulo, ou seja, valor vazio. 
+    Does not support inserting default values. Set the `useNullAsDefault` flag to hide this warning. 
+    (see docs http://knexjs.org/#Builder-insert).*/
   },
 
   staging: {
