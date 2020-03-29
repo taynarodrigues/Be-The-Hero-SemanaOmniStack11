@@ -50,6 +50,8 @@ O Be The Hero é um projeto para que ONGs possam cadastrar casos em que necessit
 
 <h1 align="center"><img align="center" src="./github_assets/frontend_home.png" alt="Omnistack 11 Web" width="700"></img></h1>
 
+## :books: Instalação
+
 ### Instalação - Backend
 Clone o projeto em seu computador. Para instalar as dependências e executar o **Servidor** (modo desenvolvimento) execute:
 ```bash
@@ -58,7 +60,6 @@ cd backend
 npm install
 npm start
 ```
-## :books: Instalação
 
 ### Instalação - Frontend (WEB)
 Para iniciar o **Frontend** do React utilize os comandos:
