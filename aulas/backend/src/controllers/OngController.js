@@ -1,4 +1,5 @@
-const crypto = require('crypto');
+//Fazendo o processo de separação do arquivo 'generateUniqued', pois se em agum outro lugar for precisar de ID único, tem-se tal código isolado para quando fizer uma alteração ocorrer pra todos os lugares
+const generateUniqued = require('../utils/generateUniqueId'); 
 
 //conexão com o banco
 const connection = require('../database/connection');
@@ -14,16 +15,9 @@ module.exports = {
 
 	// método create
 	async create(request, response){
-		// fazendo a desetruturação dos dados em uma váriavel separada
-		const {
-			name,
-			email,
-			whatsapp,
-			city,
-			uf
-		} = request.body;
-		//criar um "id" da ONG através do método para gerar um texto aleatorio de um pacote do NODE que é o crypto
-		const id = crypto.randomBytes(4).toString('HEX');
+		const { name, email, whatsapp, city, uf } = request.body;
+
+		const id = generateUniqued(); 
 
 		// Qunado o NODE chegar neste trecho de código o "await" vai aguardar até o insert finalizar
 		await connection('ongs').insert({
