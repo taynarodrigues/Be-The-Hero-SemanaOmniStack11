@@ -14,7 +14,6 @@ export default function Incidents(){
         navigation.navigate('Detail');
     }
 
-
     return(
     <View style={styles.container}>
         <View style={ styles.header}>
@@ -34,7 +33,7 @@ export default function Incidents(){
         showsVerticalScrollIndicator={false} // tirar a visualização do scroll
         renderItem={() => (
         <View style={styles.incident}>
-         <Text style={styles.incidentProperty}>ONG:</Text>
+         <Text style={[styles.incidentProperty, { marginTop: 0}]}>ONG:</Text>
          <Text style={styles.incidentValue}>APAD</Text>
 
          <Text style={styles.incidentProperty}>CASO:</Text>
