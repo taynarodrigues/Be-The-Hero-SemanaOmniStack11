@@ -1,6 +1,7 @@
 const crypto = require('crypto');
-
-export default function generateUniqueId(){
+ 
+//errei rsss export default não existe no NODE :(
+module.exports = function generateUniqueId(){
     return crypto.randomBytes(4).toString('HEX');
 }
 
